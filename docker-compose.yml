@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  frontend1:
+    build: ./frontend1/.
+    ports:
+      - '8080:80'
+  frontend2:
+    build: ./frontend2/.
+    ports:
+      - '8081:80'
+  frontend3:
+    build: ./frontend3/.
+    ports:
+      - '8082:80'
+  backend:
+    build: ./backend/.
